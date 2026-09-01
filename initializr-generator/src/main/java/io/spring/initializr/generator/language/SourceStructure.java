@@ -133,7 +133,10 @@ public class SourceStructure {
 	}
 
 	private void createFile(Path file) throws IOException {
-		Files.createDirectories(file.getParent());
+		Path parent = file.getParent();
+		if (parent != null) {
+			Files.createDirectories(parent);
+		}
 		Files.createFile(file);
 	}
 

@@ -89,7 +89,7 @@ public final class PortMapping implements Comparable<PortMapping> {
 	}
 
 	@Override
-	public boolean equals(Object o) {
+	public boolean equals(@Nullable Object o) {
 		if (this == o) {
 			return true;
 		}

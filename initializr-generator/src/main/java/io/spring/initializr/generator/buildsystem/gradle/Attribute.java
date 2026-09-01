@@ -18,6 +18,8 @@ package io.spring.initializr.generator.buildsystem.gradle;
 
 import java.util.Objects;
 
+import org.jspecify.annotations.Nullable;
+
 /**
  * An attribute.
  *
@@ -83,7 +85,7 @@ public class Attribute {
 	}
 
 	@Override
-	public boolean equals(Object o) {
+	public boolean equals(@Nullable Object o) {
 		if (this == o) {
 			return true;
 		}
